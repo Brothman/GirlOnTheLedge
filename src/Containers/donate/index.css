@@ -1,0 +1,55 @@
+.paul-photo {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.myDonatePage {
+  height: 100%;
+}
+
+.donateInfoContainer {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  /*height: 100%;*/
+}
+
+.donated {
+  font-size: 20px;
+}
+
+.less-margin {
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  display: none;
+}
+/*
+.paul-photo, .donateInfoContainer {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+*/
+@media only screen and (max-width: 420px) {
+  .paul-photo {
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .hidden {
+    visibility: visible;
+  }
+
+  .donated {
+    font-size: 12px;
+  }
+
+}

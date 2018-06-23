@@ -1,0 +1,76 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  word-wrap: break-all;
+  overflow-wrap: break-word;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  margin-right: 20px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  /*font-family: "Fira Sans";*/
+/*  font-size:16px;
+    color:#AAA;*/
+      transition: all .1s ease-in;
+      text-decoration:none;
+
+}
+
+/*
+.tab:hover {
+  -webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px blue;
+}*/
+/*
+.tab:hover {
+  -webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: rgb(0, 0, 0);
+    -webkit-fill-color: rgb(0, 0, 0);
+      text-shadow: 1px 0px 20px white;
+}*/
+
+.tab:hover {
+  -webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px white;
+}
+
+
+@media only screen and (max-width: 430px) {
+  .headerContainer {
+    margin-top: 10px;
+  }
+  .tab {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+}
+
+
+.name {
+  color: #87232f;
+  font-size: 26px;
+  /*font-family: 'EB Garamond';*/
+  font-family: 'Raleway';
+}
+
+.link {
+  text-decoration: none;
+  color: #538fbe;
+}

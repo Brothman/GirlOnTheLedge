@@ -1,0 +1,25 @@
+.coming-soon {
+  font-family: "Fira Sans";
+  font-size: 150px;
+  vertical-align: middle;
+}
+
+.myPressKit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fuller-page {
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 420px) {
+  .coming-soon {
+    font-size: 90px;
+  }
+}

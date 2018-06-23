@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) {
+    .snyop {
+      margin: 0 auto;
+      font-size: 18px;
+    }
+  }
+
+.snyop {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.quote {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.snyop {
+  font-family: "Fira Sans";
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+.body {
+  /*animation-name: fadeIn;
+  animation-duration: 10s;*/
+}
+
+.synop-head {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /*font-family: "Lobster";*/
+  font-size: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mySynopsis {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      vertical-align: middle;
+    }
+}
