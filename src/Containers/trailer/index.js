@@ -25,7 +25,7 @@ class trailer extends React.Component {
       <div className="myPressKit">
         <Header />
         <div className='wrapper-div'>
-          <iframe className="test-iframe" src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe className="test-iframe" src="https://www.youtube.com/embed/tL9zyzn1HFk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     );
