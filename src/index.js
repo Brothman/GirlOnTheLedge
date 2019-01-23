@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-snapshot';
 
 import home from './Containers/home';
 import contact from './Containers/contact';
@@ -27,5 +28,10 @@ const routes = (
   </Router>
 );
 
-ReactDOM.render(routes, document.getElementById('root'));
+// const rootElement = document.getElementById('root');
+
+render(routes, document.getElementById('root'));
+
+// ReactDOM.render(routes, document.getElementById('root'));
 registerServiceWorker();
+
