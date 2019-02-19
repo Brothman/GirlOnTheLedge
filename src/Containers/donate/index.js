@@ -2,6 +2,19 @@ import React from 'react';
 import {browserHistory} from 'react-router';
 import './index.css'
 import Header from '../../Components/Header';
+import { Button } from '@material-ui/core'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#538fbe',
+      dark: '#538fbe',
+      contrastText: '#fff',
+    }
+  }
+});
 
 class donate extends React.Component {
   render() {
@@ -16,7 +29,17 @@ class donate extends React.Component {
             <p className="info description donated"> With gratitude, </p>
           <p className="info description donated less-margin"> Ben Rothman </p>
 
-        <a href="https://www.gofundme.com/help-finish-gotl" className="buttoner buttoner-email buttoner-donate">Donate</a>
+          <form method="get" action="https://www.gofundme.com/help-finish-gotl">
+            <MuiThemeProvider theme={theme}>
+              <Button className="MDButton" style={{ 'margin-top': '6%' }}
+                type='submit'
+                variant='raised'
+                color='primary'
+              >
+                Donate
+              </Button>
+            </MuiThemeProvider>
+          </form>
           </div>
       </div>
     );

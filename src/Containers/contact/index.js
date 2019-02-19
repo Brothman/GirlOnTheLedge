@@ -1,11 +1,37 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
 import './index.css'
 import Header from '../../Components/Header';
 import Popup from 'reactjs-popup';
+import { Button } from '@material-ui/core'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#538fbe',
+      dark: '#538fbe',
+      contrastText: '#fff',
+    }
+  }
+});
 
 class ContactPage extends React.Component {
+  
   render() {
+    let testHTML = 
+    <form method="get" action="https://www.gofundme.com/help-finish-gotl">
+      <MuiThemeProvider theme={theme}>
+        <Button onClick={e => e.preventDefault() }className="MDButton" style={{ 'margin-top': '6%' }}
+          type='submit'
+          variant='raised'
+          color='primary'
+        >
+          Join Our Mailing List
+              </Button>
+      </MuiThemeProvider>
+    </form>
+  ;
     return (
       <div className="myContactPage">
         <Header />
@@ -14,7 +40,7 @@ class ContactPage extends React.Component {
           <h3 className="info"> Email: brothman7000@gmail.com </h3>
         <h3 className="info"> Phone: 1-(718)-440-6382 </h3>
       <p className="info description"> Ben Rothman is the son of Paul Rothman. He is an Executive Producer of Girl on the Ledge. He has taken over as the film's main distributor after his father's death. </p>
-       <Popup trigger={<button className="buttoner buttoner-email"> Join Our Mailing List</button>}  modal="true" lockScroll="true">
+       <Popup trigger={testHTML}  modal="true" lockScroll="true">
          <div className='wrapper-div-home'>
            <iframe className="test-iframe-home" src="http://eepurl.com/dy1lXL" frameborder="0" ></iframe>
          </div>

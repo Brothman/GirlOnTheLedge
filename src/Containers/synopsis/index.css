@@ -27,8 +27,8 @@
 
 .snyop {
   font-family: "Fira Sans";
-  animation-name: fadeIn;
-  animation-duration: 5s;
+  /* animation-name: fadeIn;
+  animation-duration: 5s; */
 }
 
 .body {

@@ -1,9 +1,7 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
 import './index.css'
 import Header from '../../Components/Header';
 import Popup from 'reactjs-popup';
-import YouTube from 'react-youtube';
 import {  Button } from '@material-ui/core'
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
